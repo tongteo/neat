@@ -13,7 +13,7 @@ BLUE = (0, 0, 255)
 MAGENTA = (255, 0, 255)
 
 
-WIDTH, HEIGHT = 600, 400
+WIDTH, HEIGHT = 800, 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Catch the ball!")
 
@@ -36,7 +36,7 @@ class Player:
         self.height = 10
         self.x = WIDTH // 2 - self.width // 2
         self.y = HEIGHT - 20
-        self.speed = 3
+        self.speed = 5
         self.points = 0
         self.lives = 5
         self.level = 0
