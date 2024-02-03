@@ -13,7 +13,7 @@ BLUE = (0, 0, 255)
 MAGENTA = (255, 0, 255)
 
 
-WIDTH, HEIGHT = 800, 600
+WIDTH, HEIGHT = 600, 400
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Catch the ball!")
 
@@ -110,7 +110,7 @@ def play_with_saved_genome(genome, config):
             player.lives -= 1
             player.points -= 100
             if player.lives > 0:
-                ball = Ball()
+                ball = Ball(ball.speed/2)
             else:
                 break
 
